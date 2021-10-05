@@ -1,0 +1,26 @@
+.DS_Store
+archived
+ebas_proj_dump
+ebas_proj_dump_xz
+raw_data
+__pycache__
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.ipynb_checkpoints
