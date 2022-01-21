@@ -14,6 +14,8 @@ import sys
 
 def run_mp(map_func, arg_list, combine_func=None):
    num_cores = multiprocessing.cpu_count()
+   num_cores = len(arg_list) if len(arg_list)<num_cores else num_cores
+   
    
    with concurrent.futures.ProcessPoolExecutor(max_workers=num_cores) as pool:
       with tqdm(total=len(arg_list)) as progress:
